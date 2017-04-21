@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CKIndicatoreViewLib/CKIndicatorView/CKIndicatorView.xcodeproj">
+      location = "group:/Users/Channing/Documents/ChanningKuo/CKIndicatorView/CKIndicatorViewLib.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:CKIndicatorView.xcodeproj">
+      location = "container:/Users/Channing/Documents/ChanningKuo/CKIndicatorView/CKIndicatorViewFrameWork.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CKIndicatorViewTest.xcodeproj">
    </FileRef>
 </Workspace>

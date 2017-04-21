@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D7F541901EA9F23600D0BD8D /* CKIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F5418F1EA9F23600D0BD8D /* CKIndicatorView.m */; };
-		D7F541911EA9F23600D0BD8D /* CKIndicatorView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7F5418E1EA9F23600D0BD8D /* CKIndicatorView.h */; };
+		D748360E1EA9F4B700A9674E /* CKIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D748360D1EA9F4B700A9674E /* CKIndicatorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +17,15 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				D7F541911EA9F23600D0BD8D /* CKIndicatorView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D748360C1EA9F4B700A9674E /* CKIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKIndicatorView.h; path = CKIndicatoreViewLib/CKIndicatorView.h; sourceTree = SOURCE_ROOT; };
+		D748360D1EA9F4B700A9674E /* CKIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKIndicatorView.m; path = CKIndicatoreViewLib/CKIndicatorView.m; sourceTree = SOURCE_ROOT; };
 		D7F5418B1EA9F23600D0BD8D /* libCKIndicatorView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCKIndicatorView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7F5418E1EA9F23600D0BD8D /* CKIndicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKIndicatorView.h; sourceTree = "<group>"; };
-		D7F5418F1EA9F23600D0BD8D /* CKIndicatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKIndicatorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +58,8 @@
 		D7F5418D1EA9F23600D0BD8D /* CKIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
-				D7F5418E1EA9F23600D0BD8D /* CKIndicatorView.h */,
-				D7F5418F1EA9F23600D0BD8D /* CKIndicatorView.m */,
+				D748360C1EA9F4B700A9674E /* CKIndicatorView.h */,
+				D748360D1EA9F4B700A9674E /* CKIndicatorView.m */,
 			);
 			path = CKIndicatorView;
 			sourceTree = "<group>";
@@ -101,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D7F541861EA9F23600D0BD8D /* Build configuration list for PBXProject "CKIndicatorView" */;
+			buildConfigurationList = D7F541861EA9F23600D0BD8D /* Build configuration list for PBXProject "CKIndicatorViewLib" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -123,7 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7F541901EA9F23600D0BD8D /* CKIndicatorView.m in Sources */,
+				D748360E1EA9F4B700A9674E /* CKIndicatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +169,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -213,7 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -241,7 +239,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7F541861EA9F23600D0BD8D /* Build configuration list for PBXProject "CKIndicatorView" */ = {
+		D7F541861EA9F23600D0BD8D /* Build configuration list for PBXProject "CKIndicatorViewLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7F541921EA9F23600D0BD8D /* Debug */,
@@ -257,6 +255,7 @@
 				D7F541961EA9F23600D0BD8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
