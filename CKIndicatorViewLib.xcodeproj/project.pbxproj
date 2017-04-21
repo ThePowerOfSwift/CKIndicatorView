@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D748360E1EA9F4B700A9674E /* CKIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D748360D1EA9F4B700A9674E /* CKIndicatorView.m */; };
+		D77AB6041EA9F7240050C17C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77AB6031EA9F7240050C17C /* UIKit.framework */; };
+		D77AB6061EA9F7380050C17C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77AB6051EA9F7380050C17C /* Foundation.framework */; };
+		D77AB6091EA9F7E40050C17C /* CKIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = D748360C1EA9F4B700A9674E /* CKIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D7F541891EA9F23600D0BD8D /* CopyFiles */ = {
+		D7F541891EA9F23600D0BD8D /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D748360C1EA9F4B700A9674E /* CKIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKIndicatorView.h; path = CKIndicatoreViewLib/CKIndicatorView.h; sourceTree = SOURCE_ROOT; };
-		D748360D1EA9F4B700A9674E /* CKIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKIndicatorView.m; path = CKIndicatoreViewLib/CKIndicatorView.m; sourceTree = SOURCE_ROOT; };
+		D77AB6031EA9F7240050C17C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D77AB6051EA9F7380050C17C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D7F5418B1EA9F23600D0BD8D /* libCKIndicatorView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCKIndicatorView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77AB6061EA9F7380050C17C /* Foundation.framework in Frameworks */,
+				D77AB6041EA9F7240050C17C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D77AB6021EA9F7240050C17C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D77AB6051EA9F7380050C17C /* Foundation.framework */,
+				D77AB6031EA9F7240050C17C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D7F541821EA9F23600D0BD8D = {
 			isa = PBXGroup;
 			children = (
 				D7F5418D1EA9F23600D0BD8D /* CKIndicatorView */,
 				D7F5418C1EA9F23600D0BD8D /* Products */,
+				D77AB6021EA9F7240050C17C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +75,22 @@
 			isa = PBXGroup;
 			children = (
 				D748360C1EA9F4B700A9674E /* CKIndicatorView.h */,
-				D748360D1EA9F4B700A9674E /* CKIndicatorView.m */,
 			);
 			path = CKIndicatorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D77AB6081EA9F7C70050C17C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77AB6091EA9F7E40050C17C /* CKIndicatorView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		D7F5418A1EA9F23600D0BD8D /* CKIndicatorView */ = {
@@ -73,7 +99,8 @@
 			buildPhases = (
 				D7F541871EA9F23600D0BD8D /* Sources */,
 				D7F541881EA9F23600D0BD8D /* Frameworks */,
-				D7F541891EA9F23600D0BD8D /* CopyFiles */,
+				D7F541891EA9F23600D0BD8D /* Copy Files */,
+				D77AB6081EA9F7C70050C17C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -95,6 +122,7 @@
 				TargetAttributes = {
 					D7F5418A1EA9F23600D0BD8D = {
 						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -105,6 +133,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D7F541821EA9F23600D0BD8D;
 			productRefGroup = D7F5418C1EA9F23600D0BD8D /* Products */;
@@ -121,7 +150,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D748360E1EA9F4B700A9674E /* CKIndicatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,18 +249,33 @@
 		D7F541951EA9F23600D0BD8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				SWIFT_OBJC_BRIDGING_HEADER = "CKIndicatorView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		D7F541961EA9F23600D0BD8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				SWIFT_OBJC_BRIDGING_HEADER = "CKIndicatorView-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
