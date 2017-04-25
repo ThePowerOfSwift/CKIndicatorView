@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		D7308E481EAF324C00FC82B8 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7308E471EAF324C00FC82B8 /* IndicatorView.swift */; };
 		D739B8AB1EAF2D5500322C80 /* CKIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B8AA1EAF2D5500322C80 /* CKIndicatorView.swift */; };
+		D75D67A41EAF393B00DBA18F /* IndicatorAnimationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75D67A11EAF393B00DBA18F /* IndicatorAnimationError.swift */; };
+		D75D67A51EAF393B00DBA18F /* IndicatorAnimationLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75D67A21EAF393B00DBA18F /* IndicatorAnimationLoading.swift */; };
+		D75D67A61EAF393B00DBA18F /* IndicatorAnimationSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75D67A31EAF393B00DBA18F /* IndicatorAnimationSuccess.swift */; };
+		D75D67A81EAF397800DBA18F /* IndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75D67A71EAF397800DBA18F /* IndicatorAnimationDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +20,10 @@
 		D70649D51EAF2CFB00CAB5C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7308E471EAF324C00FC82B8 /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		D739B8AA1EAF2D5500322C80 /* CKIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKIndicatorView.swift; sourceTree = "<group>"; };
+		D75D67A11EAF393B00DBA18F /* IndicatorAnimationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndicatorAnimationError.swift; path = Animation/IndicatorAnimationError.swift; sourceTree = "<group>"; };
+		D75D67A21EAF393B00DBA18F /* IndicatorAnimationLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndicatorAnimationLoading.swift; path = Animation/IndicatorAnimationLoading.swift; sourceTree = "<group>"; };
+		D75D67A31EAF393B00DBA18F /* IndicatorAnimationSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndicatorAnimationSuccess.swift; path = Animation/IndicatorAnimationSuccess.swift; sourceTree = "<group>"; };
+		D75D67A71EAF397800DBA18F /* IndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,19 +56,23 @@
 		D70649D31EAF2CFB00CAB5C7 /* CKIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
-				D7308E491EAF325900FC82B8 /* Views */,
+				D75D67A01EAF38F500DBA18F /* Animation */,
+				D75D67A71EAF397800DBA18F /* IndicatorAnimationDelegate.swift */,
+				D7308E471EAF324C00FC82B8 /* IndicatorView.swift */,
 				D739B8AA1EAF2D5500322C80 /* CKIndicatorView.swift */,
 				D70649D51EAF2CFB00CAB5C7 /* Info.plist */,
 			);
 			path = CKIndicatorView;
 			sourceTree = "<group>";
 		};
-		D7308E491EAF325900FC82B8 /* Views */ = {
+		D75D67A01EAF38F500DBA18F /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				D7308E471EAF324C00FC82B8 /* IndicatorView.swift */,
+				D75D67A11EAF393B00DBA18F /* IndicatorAnimationError.swift */,
+				D75D67A21EAF393B00DBA18F /* IndicatorAnimationLoading.swift */,
+				D75D67A31EAF393B00DBA18F /* IndicatorAnimationSuccess.swift */,
 			);
-			name = Views;
+			name = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7308E481EAF324C00FC82B8 /* IndicatorView.swift in Sources */,
+				D75D67A61EAF393B00DBA18F /* IndicatorAnimationSuccess.swift in Sources */,
+				D75D67A51EAF393B00DBA18F /* IndicatorAnimationLoading.swift in Sources */,
 				D739B8AB1EAF2D5500322C80 /* CKIndicatorView.swift in Sources */,
+				D75D67A81EAF397800DBA18F /* IndicatorAnimationDelegate.swift in Sources */,
+				D75D67A41EAF393B00DBA18F /* IndicatorAnimationError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
