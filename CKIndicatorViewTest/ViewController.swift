@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  CKIndicatorViewTest
 //
-//  Created by Channing on 2017/4/21.
+//  Created by Channing on 2017/4/25.
 //  Copyright © 2017年 Channing Kuo. All rights reserved.
 //
 
